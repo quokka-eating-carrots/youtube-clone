@@ -6,3 +6,113 @@ body {
 img {
   display: block;
 }
+
+a {
+  text-decoration: none;
+}
+
+.flex-space {
+  flex-grow: 1;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  height: 56px;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+header .menu--icon {
+  font-size: 30px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+header .YT-logo {
+  background-image: url("../image/Youtube-logo-png.png");
+  width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 20px;
+}
+
+header > .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .search input {
+  width: 350px;
+  height: 34px;
+  border: 1px solid #BDBDBD;
+}
+
+header .search input::placeholder {
+  font-size: 16px;
+}
+
+header .search .material-symbols-outlined {
+  font-size: 24px;
+  display: flex;
+}
+
+header .search .material-symbols-outlined.keyboard {
+  position: absolute;
+  right: 115px;
+}
+
+
+header .search .material-symbols-outlined.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #BDBDBD;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  height: 36px;
+  width: 55px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+header .search .material-symbols-outlined.mic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+
+header .notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+
+header .user-profile {
+  background-image: url("../image/quokka-profile.jpg");
+  height: 34px;
+  width: 34px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+  margin-left: 8px;
+  margin-right: 20px;
+}
