@@ -15,12 +15,26 @@ a {
   flex-grow: 1;
 }
 
+.side-bar .menu-main ul li:first-child .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 
+  'wght' 200;
+}
+
 /* HEADER */
 
 header {
+  background-color: #fff;
   display: flex;
   height: 56px;
   border-bottom: 1px solid #BDBDBD;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 
 header .menu--icon {
@@ -31,11 +45,11 @@ header .menu--icon {
 
 header .YT-logo {
   background-image: url("../image/Youtube-logo-png.png");
-  width: 120px;
+  width: 100px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 20px;
+  margin: 15px 20px;
 }
 
 header > .search {
@@ -116,3 +130,189 @@ header .user-profile {
   margin-left: 8px;
   margin-right: 20px;
 }
+
+/* SIDE BAR */
+
+.side-bar {
+  width: 240px;
+  position: sticky;
+  left: 0;
+  padding-right: 24px;
+}
+
+.side-bar .menu-main {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .menu-main ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .menu-main ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .menu-main ul li .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.side-bar .menu-main ul li span:first-child {
+  padding-left: 24px;
+}
+
+.side-bar .menu-user {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .menu-user ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .menu-user ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .menu-user ul li span:first-child {
+  padding-left: 24px;
+}
+
+.side-bar .menu-subscription {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .menu-subscription > span {
+  display: block;
+  padding: 8px 24px;
+}
+
+.side-bar .menu-subscription ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .menu-subscription ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .menu-subscription ul li span:first-child {
+  padding-left: 24px;  
+}
+
+.side-bar .menu-search {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .menu-search > span {
+  display: block;
+  padding: 8px 24px;
+}
+
+.side-bar .menu-search ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .menu-search ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .menu-search ul li span:first-child {
+  padding-left: 24px;
+}
+
+.side-bar .YT-plus {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .YT-plus > span {
+  display: block;
+  padding: 8px 24px;
+}
+
+.side-bar .YT-plus ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .YT-plus ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .YT-plus ul li svg {
+  padding-left: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.side-bar .menu-service {
+  padding: 10px 0;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.side-bar .menu-service ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.side-bar .menu-service ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.side-bar .menu-service ul li span:first-child {
+  padding-left: 24px;
+}
+
+.side-bar .info-1 {
+  padding: 16px 24px 0 24px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.side-bar .info-1 a {
+  color: #6e6e6e;
+}
+
+.side-bar .info-2 {
+  padding: 16px 24px 0 24px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.side-bar .info-2 a {
+  color: #6e6e6e;
+}
+
+.side-bar .copyright {
+  padding: 16px 24px;
+  font-size: 12px;
+  color: #6e6e6e;
+  line-height: 1.4;
+}
+
+.side-bar .copyright a {
+  color: #5876CE;
+}
+
