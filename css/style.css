@@ -138,6 +138,7 @@ header .user-profile {
   position: sticky;
   left: 0;
   padding-right: 24px;
+  overflow: auto;
 }
 
 .side-bar .menu-main {
@@ -149,7 +150,8 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
 }
 
 .side-bar .menu-main ul li:hover {
@@ -173,7 +175,8 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
 }
 
 .side-bar .menu-user ul li:hover {
@@ -198,15 +201,53 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
+  padding-left: 24px;
 }
 
 .side-bar .menu-subscription ul li:hover {
   background-color: #f2f2f2;
 }
 
-.side-bar .menu-subscription ul li span:first-child {
-  padding-left: 24px;  
+.side-bar .menu-subscription .onemillion-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/1million.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.side-bar .menu-subscription .day6-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/day6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.side-bar .menu-subscription .rozalll-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/rozalll.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.side-bar .menu-subscription .coding-logo {
+  width: 24px;
+  height: 24px;
+  background-image: url("../image/coding.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .side-bar .menu-search {
@@ -223,7 +264,8 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
 }
 
 .side-bar .menu-search ul li:hover {
@@ -248,7 +290,8 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
 }
 
 .side-bar .YT-plus ul li:hover {
@@ -270,7 +313,8 @@ header .user-profile {
   height: 40px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  cursor: pointer;
 }
 
 .side-bar .menu-service ul li:hover {
@@ -291,6 +335,7 @@ header .user-profile {
 
 .side-bar .info-1 a {
   color: #6e6e6e;
+  cursor: pointer;
 }
 
 .side-bar .info-2 {
@@ -303,6 +348,7 @@ header .user-profile {
 
 .side-bar .info-2 a {
   color: #6e6e6e;
+  cursor: pointer;
 }
 
 .side-bar .copyright {
@@ -316,3 +362,45 @@ header .user-profile {
   color: #5876CE;
 }
 
+/* CATEGORIES MENU */
+.categories-menu {
+  display: flex;
+  position: absolute;
+  height: 56px;
+  width: calc(100% - 240px);
+  top: 57px;
+  left: 240px;
+  border-bottom: 1px solid #BDBDBD;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-menu .category__active {
+  color: #fff;
+  background-color: #232323;
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.categories-menu .category {
+  height: 32px;
+  background-color: #f1f1f1;
+  border: 1px solid #BDBDBD;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.categories-menu .category:hover {
+  background-color: #dadada;
+}
