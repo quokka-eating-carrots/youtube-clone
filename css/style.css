@@ -416,8 +416,8 @@ header .user-profile {
   background-color: #dadada;
 }
 
-/* VEDIO CONTENTS */
-.vedio__contents {
+/* video CONTENTS */
+.video__contents {
   background-color: #f8f8f8;
   position: absolute;
   top: 113px;
@@ -431,18 +431,18 @@ header .user-profile {
   padding: 20px 0;
 }
 
-.vedio__contents .vedio__content {
+.video__contents .video__content {
   position: relative;
   width: 360px;
   height: 355px;
 }
 
-.vedio__contents .vedio__content .vedio__thumbnail {
+.video__contents .video__content .video__thumbnail {
   width: 359.98px;
   padding-bottom: 10px; 
 }
 
-.vedio__contents .vedio__content .vedio__time {
+.video__contents .video__content .video__time {
   font-size: 12px;
   position: absolute;
   top: 183px;
@@ -456,34 +456,34 @@ header .user-profile {
   color: #fff;
 }
 
-.vedio__contents .vedio__content .vedio__profile {
+.video__contents .video__content .video__profile {
   height: 36px;
   width: 36px;
   border-radius: 50%;
   position: absolute;
 }
 
-.vedio__contents .vedio__content .vedio__detail {
+.video__contents .video__content .video__detail {
   position: absolute;
   left: 50px;
 }
 
-.vedio__contents .vedio__content .vedio__title {
+.video__contents .video__content .video__title {
   font-size: 16px;
 }
 
-.vedio__contents .vedio__content .vedio__author {
+.video__contents .video__content .video__author {
   font-size: 14px;
   color: #606060;
   padding-top: 5px;
 }
 
-.vedio__contents .vedio__content .vedio__hits {
+.video__contents .video__content .video__hits {
   font-size: 14px;
   color: #606060;
 }
 
-.vedio__contents .vedio__content .vedio__live {
+.video__contents .video__content .video__live {
   background-color: #D11919;
   display: flex;
   color: white;
@@ -495,7 +495,7 @@ header .user-profile {
   padding-top: 2px;
 }
 
-.vedio__contents .vedio__content .vedio__live .material-symbols-outlined {
+.video__contents .video__content .video__live .material-symbols-outlined {
   font-size: 12px;
   padding-right: 2px;
 }
