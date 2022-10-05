@@ -6,16 +6,16 @@ thisYear.textContent = new Date().getFullYear();
 
 // 계속 마우스 오버하여 재생하기
 
-// const thumbnailEl = document.getElementsByClassName(".vedio__thumbnail");
-// const timeEl = document.getElementsByClassName(".vedio__time");
+const thumbnailEl = document.getElementsByClassName(".video__thumbnail");
+const timeEl = document.getElementsByClassName(".video__time");
 
-// function mouseOver () {
-//   if (timeEl.innerText === null) {
-//     timeEl.innerText = "계속 마우스 오버하여 재생하기"
-//   } else {
-//     timeEl.innerText = ""
-//     timeEl.innerText = "계속 마우스 오버하여 재생하기"
-//   }
-// }
+function mouseOver () {
+  if (timeEl.innerText === null) {
+    timeEl.innerText = "계속 마우스 오버하여 재생하기"
+  } else {
+    timeEl.innerText = ""
+    timeEl.innerText = "계속 마우스 오버하여 재생하기"
+  }
+}
 
-// thumbnailEl.addEventListener("mouseover", mouseOver);
+thumbnailEl.addEventListener("mouseover", mouseOver);
