@@ -1,7 +1,7 @@
 # 🎥 youtube-clone
 Youtube 메인 페이지 클론 코딩입니다!
 
-[클론 페이지 보기](https://633fb4af4c600e684bd08edf--boisterous-cucurucho-5fa587.netlify.app/)
+[클론 페이지 보기](https://boisterous-cucurucho-5fa587.netlify.app/)
 
 ---
 # 1. 유튜브 메인 페이지로 하게 된 이유
