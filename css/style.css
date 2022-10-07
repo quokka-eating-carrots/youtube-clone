@@ -157,18 +157,23 @@ header .user-profile {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  /* overflow-y: scroll; */
-}
-
-.side-bar:hover {
-  overflow-y: scroll
+  overflow-y: auto;
 }
 
 .side-bar::-webkit-scrollbar {
-  width: 8px;
+  display: none;
 }
 
-.side-bar::-webkit-scrollbar-thumb {
+.side-bar:hover {
+  overflow-y: scroll;
+}
+
+.side-bar:hover::-webkit-scrollbar {
+  width: 8px;
+  display: initial;
+}
+
+.side-bar:hover::-webkit-scrollbar-thumb {
   background-color: #8c8c8c;
   border-radius: 10px;
   height: 30%;
