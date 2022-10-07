@@ -2,6 +2,18 @@ body {
   font-family: 'Roboto', 'Arial', 'sans-serif';
   font-size: 14px; 
   line-height: 1.4;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c;
+  border-radius: 10px;
+  height: 50px;
 }
 
 img {
@@ -33,15 +45,17 @@ header {
   display: flex;
   height: 56px;
   border-bottom: 1px solid #d2d2d2;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9;
+  width: 100%;
 }
 
 header .menu__icon {
   font-size: 30px;
   margin: auto;
   padding-left: 20px;
+  cursor: pointer;
 }
 
 header .YT-logo {
@@ -136,11 +150,28 @@ header .user-profile {
 .side-bar {
   width: 240px;
   position: fixed;
+  top: 58px;
   left: 0;
-  padding-right: 24px;
-  overflow-y: auto;
+  padding-right: 18px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  /* overflow-y: scroll; */
+}
+
+.side-bar:hover {
+  overflow-y: scroll
+}
+
+.side-bar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c;
+  border-radius: 10px;
+  height: 30%;
 }
 
 .side-bar .menu-main {
@@ -377,9 +408,10 @@ header .user-profile {
   display: flex;
   position: absolute;
   height: 56px;
-  width: calc(100% - 260px);
+  width: 100%;
   top: 57px;
   right: 0;
+  left: 260px;
   border-bottom: 1px solid #d2d2d2;
   gap: 10px;
   justify-content: center;
@@ -397,6 +429,8 @@ header .user-profile {
   padding: 0 12px;
   white-space: nowrap;
   cursor: pointer;
+  position: relative;
+  left: -130px;
 }
 
 .categories-menu .category {
@@ -406,10 +440,13 @@ header .user-profile {
   border-radius: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 12px;
   white-space: nowrap;
   cursor: pointer;
   transition: .3s;
+  position: relative;
+  left: -130px;
 }
 
 .categories-menu .category:hover {
@@ -422,7 +459,7 @@ header .user-profile {
   position: absolute;
   top: 113px;
   left: 260px;
-  width: calc(100% - 260px);
+  width: 1643px;
 }
 
 .video__contents {
@@ -504,15 +541,19 @@ header .user-profile {
 
 /* RECOMMEND MOVIE */
 .recommend--movie {
-  border-top: 5px solid #BDBDBD;
-  position: absolute;
+  border-top: 5px solid #ededed;
+  border-bottom: 5px solid #ededed;
+  position: relative;
+  padding: 24px 0;
+  margin: 0 24px;
+  height: 400px;
 }
 
 .recommend--movie .movie--header {
   position: absolute;
   display: flex;
   left: 60px;
-  padding-top: 24px;
+  padding: 24px 0;
 }
 
 .recommend--movie .movie--header .movie--icon {
@@ -535,11 +576,14 @@ header .user-profile {
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;
+  position: absolute;
+  top: 80px;
+  left: 60px;
 }
 
 .recommend--movie .movie__contents .movie__content {
   position: relative;
-  width: 150px;
+  width: 170px;
   height: 355px;
 }
 
@@ -551,7 +595,7 @@ header .user-profile {
   font-size: 12px;
   position: absolute;
   top: 200px;
-  right: 3px;
+  right: 23px;
   height: 15px;
   display: flex;
   align-items: center;
@@ -579,14 +623,21 @@ header .user-profile {
 .recommend--movie .movie__contents .movie__content .movie__detail .movie__buy {
   color: #119208;
   font-size: 12px;
-  background-color: #f8f8f8;
+  background-color: #ededed;
   padding: 0 2px;
   border-radius: 3px;
 }
 
 .recommend--movie .movie__contents .movie__content .movie__detail .movie__age {
   font-size: 12px;
-  background-color: #f8f8f8;
+  background-color: #ededed;
   padding: 0 2px;
   border-radius: 3px;
+}
+
+/* SECOND VEDIOS */
+.second-vedio {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
