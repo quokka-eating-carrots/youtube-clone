@@ -415,13 +415,16 @@ header .user-profile {
   height: 56px;
   width: 100%;
   top: 57px;
-  right: 0;
   left: 260px;
   border-bottom: 1px solid #d2d2d2;
-  gap: 10px;
   justify-content: center;
   align-items: center;
   background-color: #fff;
+}
+
+.categories-menu ul {
+  display: flex;
+  gap: 10px;
 }
 
 .categories-menu .category--active {
@@ -480,6 +483,7 @@ header .user-profile {
   width: 360px;
   height: 355px;
 }
+
 
 .video__contents .video__content .video__thumbnail {
   width: 359.98px;
