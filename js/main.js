@@ -5,7 +5,6 @@ thisYear.textContent = new Date().getFullYear();
 
 
 // 계속 마우스 오버하여 재생하기
-
 const thumbnailEl = document.querySelectorAll(".video__thumbnail");
 const timeEl = document.querySelectorAll(".video__time");
 
