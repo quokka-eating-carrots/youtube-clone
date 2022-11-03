@@ -5,17 +5,16 @@ thisYear.textContent = new Date().getFullYear();
 
 
 // 계속 마우스 오버하여 재생하기
+const thumbnailEl = document.querySelectorAll(".video__thumbnail");
+const timeEl = document.querySelectorAll(".video__time");
 
-const thumbnailEl = document.getElementsByClassName(".video__thumbnail");
-const timeEl = document.getElementsByClassName(".video__time");
+for (let i = 0; i < thumbnailEl.length; i += 1) {
+  const originalTime = timeEl[i].innerText;
 
-function mouseOver () {
-  if (timeEl.innerText === null) {
-    timeEl.innerText = "계속 마우스 오버하여 재생하기"
-  } else {
-    timeEl.innerText = ""
-    timeEl.innerText = "계속 마우스 오버하여 재생하기"
-  }
-}
-
-thumbnailEl.addEventListener("mouseover", mouseOver);
+  thumbnailEl[i].addEventListener('mouseover', function () {
+    timeEl[i].innerText = "계속 마우스 오버하여 재생하기"
+  })
+  thumbnailEl[i].addEventListener('mouseout', function () {
+    timeEl[i].innerText = originalTime
+  })
+} 
