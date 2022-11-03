@@ -148,6 +148,7 @@ header .user-profile {
 /* SIDE BAR */
 
 .side-bar {
+  height: 100%;
   width: 240px;
   position: fixed;
   top: 58px;
@@ -399,6 +400,7 @@ header .user-profile {
 
 .side-bar .copyright {
   padding: 16px 24px;
+  margin-bottom: 50px;
   font-size: 12px;
   color: #6e6e6e;
   line-height: 1.4;
